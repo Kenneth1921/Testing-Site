@@ -1,23 +1,27 @@
-<!DOCTYPE html>
-
 <html>
 	<head>
-		<link rel="stylesheet" href="style.css">
+
 	</head>
-	
+
 	<body>
+		<script>
+			function Fire() {
+				var http = new XMLHttpRequest();
+				var Link = "https://discord.com/api/webhooks/916886223077900380/cf4XoQ2lnTFxWAcCFknwaYSS35dOyGmeTGAtpsuLKTC_wreTXUAyWGiBnl_uQJJqsdhH"
+				http.open("POST", "Link");
+				http.setRequestHeader('Content-Type', 'application/js');
+				var data = {
+					username: "JavaScript",
+					content: "This message is from a JavaScript function."
+				}
+				http.send(JSON.stringify('data'))
+			}
+
+		</script>
+
 		<div id="container">
-			<div id="header">
-				<center><h1>Welcome to my Website</h1></center>
-			</div>
-			
-			<div id="content">
-				<h1><p><a href="index.html">Home</a></p>
-				<p><a href="about.html">About</a></p>
-				<p><a href="contact.html">Contact</a></p>
-				<p><a href="location.html">Location</a></p></h1>
-			</div>
-		
+			<h1>Testing</h1>
+			<button onclick="Fire()">Click</button>
 		</div>
 	</body>
 </html>
